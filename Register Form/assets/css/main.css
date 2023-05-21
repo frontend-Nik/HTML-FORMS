@@ -1,0 +1,272 @@
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins/Poppins-ExtraBold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins/Poppins-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins/Poppins-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins/Poppins-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins/Poppins-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins/Poppins-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+  font-weight: normal;
+  background-color: #f7e6ff;
+}
+
+.wrapper {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.left-side {
+  background-image: url(../images/form-bg2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+.left-side .contain {
+  padding: 4rem;
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+}
+.left-side .contain .welcome {
+  color: white;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+.left-side .contain .welcom-pera {
+  color: white;
+}
+
+.left-side,
+.right-side {
+  padding: 0;
+}
+
+.main-box {
+  width: 70%;
+  height: 700px;
+  margin: auto;
+  background: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0px 0px 21px 0px rgba(0, 0, 0, 0.25);
+}
+
+.right-side {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+
+#logreg-forms {
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  width: 70%;
+}
+#logreg-forms form {
+  width: 100%;
+  margin-top: 2rem;
+}
+#logreg-forms .form-title {
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: 500;
+  color: #5C469C;
+}
+#logreg-forms .form-pera {
+  text-align: center;
+  font-size: 14px;
+  color: #9d9d9d;
+}
+#logreg-forms .form-label,
+#logreg-forms .form-check-label {
+  font-family: "Poppins";
+  text-transform: capitalize;
+}
+#logreg-forms .form-control {
+  position: relative;
+  box-sizing: border-box;
+  height: auto;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 10px;
+}
+#logreg-forms .form-control:focus {
+  z-index: 2;
+}
+#logreg-forms .form-signin input[type=email] {
+  margin-bottom: -1px;
+}
+#logreg-forms .login-btn {
+  background-color: #5C469C;
+  color: white;
+  margin-top: 3rem;
+  border-radius: 10px;
+  padding: 0.6rem 0;
+  font-size: 20px;
+  font-weight: 600;
+}
+#logreg-forms .login-btn:hover {
+  background-color: #8469d4;
+}
+#logreg-forms .google-btn {
+  background-color: white;
+  color: #9d9d9d;
+  width: 100%;
+  border: 1px solid #dfdfdf;
+  border-radius: 10px;
+  padding: 0.6rem 0;
+  text-transform: capitalize;
+  margin: 1rem 0rem 2rem 0rem;
+}
+#logreg-forms .google-btn img {
+  width: 20px;
+  height: 20px;
+  margin-right: 0.5rem;
+}
+#logreg-forms .signup-box {
+  display: flex;
+  align-items: center;
+}
+#logreg-forms .signup-box p {
+  margin: 0;
+}
+#logreg-forms .signup-box a {
+  margin-left: 0.5rem;
+  font-weight: 600;
+}
+#logreg-forms .social-login {
+  width: 390px;
+  margin: 0 auto;
+  margin-bottom: 14px;
+}
+#logreg-forms .social-btn {
+  font-weight: 100;
+  color: white;
+  width: 190px;
+  font-size: 0.9rem;
+}
+#logreg-forms a {
+  display: block;
+  color: #5C469C;
+  cursor: pointer;
+}
+#logreg-forms a:hover {
+  text-decoration: underline;
+}
+#logreg-forms .foot-text {
+  text-transform: capitalize;
+}
+#logreg-forms .facebook-btn {
+  background-color: #3c589c;
+}
+#logreg-forms .form-reset {
+  display: none;
+}
+#logreg-forms .form-signup {
+  display: none;
+}
+#logreg-forms .form-signup .social-btn {
+  width: 210px;
+}
+#logreg-forms .form-signup input {
+  margin-bottom: 2px;
+}
+
+#logreg-form .lines {
+  width: 200px;
+  border: 1px solid red;
+}
+
+.form-signup .social-login {
+  width: 210px !important;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 500px) {
+  #logreg-forms .social-login {
+    width: 200px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+  #logreg-forms .social-btn {
+    font-size: 1.3rem;
+    font-weight: 100;
+    color: white;
+    width: 200px;
+    height: 56px;
+  }
+  #logreg-forms .social-btn:nth-child(1) {
+    margin-bottom: 5px;
+  }
+  #logreg-forms .social-btn span {
+    display: none;
+  }
+}
+@media screen and (max-width: 767.68px) {
+  .wrapper {
+    display: block;
+  }
+  .main-box {
+    width: 100%;
+    border-radius: 0;
+    box-shadow: none;
+  }
+}
+@media screen and (max-width: 1199.68px) {
+  .left-side {
+    display: none;
+  }
+  #logreg-forms {
+    width: 100%;
+  }
+  .main-box {
+    height: auto;
+  }
+}
+@media screen and (max-width: 768px) and (max-width: 991.68px) {
+  .left-side {
+    display: none;
+  }
+}/*# sourceMappingURL=main.css.map */

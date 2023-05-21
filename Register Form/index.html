@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register Form</title>
+
+    <link rel="stylesheet" href="./assets/css/all.min.css" />
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="row main-box">
+        <div class="col-xl-6 col-12 left-side">
+          <div class="contain">
+            <h1 class="welcome">welcome!</h1>
+            <p class="welcom-pera">
+              We're Glad you're here! Discover useful resources, browse our
+              extensive selection of items, and take advantage of a seamless
+              user experience. Join our community to discover endless
+              opportunities!
+            </p>
+          </div>
+        </div>
+
+        <div class="col-xl-6 col-12 right-side">
+          <div id="logreg-forms">
+            <h1 class="form-title">hello again!</h1>
+            <p class="form-pera">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+              dignissimos dolorem excepturi.
+            </p>
+            <form class="form-signin">
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label"
+                  >Email address</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                  placeholder="email"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label"
+                  >Password</label
+                >
+                <input
+                  type="password"
+                  class="form-control"
+                  id="exampleInputPassword1"
+                  placeholder="password"
+                />
+              </div>
+              <div
+                class="mb-3 form-check d-flex justify-content-between align-items-center"
+              >
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="exampleCheck1"
+                />
+                <label class="form-check-label" for="exampleCheck1"
+                  >remember me</label
+                >
+                <a href="#" id="forgot_pswd">Forgot password?</a>
+              </div>
+              <div class="mb-3">
+                <button class="btn login-btn btn-block" type="submit">
+                  Login
+                </button>
+              </div>
+              <div class="mb-3">
+                <button class="btn google-btn">
+                  <img src="./assets/images/google.png" alt="icon" /> sign in
+                  with google
+                </button>
+              </div>
+
+              <div
+                class="mb-3 signup-box d-flex justify-content-center align-items-center"
+              >
+                <p class="foot-text">Don't have an account?</p>
+                <a id="btn-signup">Sign up </a>
+              </div>
+            </form>
+
+            <form action="/reset/password/" class="form-reset">
+              <div class="mb-3">
+                <input
+                  type="email"
+                  id="resetEmail"
+                  class="form-control"
+                  placeholder="Email address"
+                  required=""
+                  autofocus=""
+                />
+              </div>
+              <button class="btn login-btn btn-block" type="submit">
+                Reset Password
+              </button>
+
+              <a href="#" id="cancel_reset" class="mt-3"
+                ><i class="fas fa-angle-left"></i> Back</a
+              >
+            </form>
+
+            <form action="/signup/" class="form-signup">
+              <div class="mb-3">
+                <input
+                  type="text"
+                  id="user-name"
+                  class="form-control"
+                  placeholder="Full name"
+                  required=""
+                  autofocus=""
+                />
+              </div>
+              <div class="mb-3">
+                <input
+                  type="email"
+                  id="user-email"
+                  class="form-control"
+                  placeholder="Email address"
+                  required
+                  autofocus=""
+                />
+              </div>
+              <div class="mb-3">
+                <input
+                  type="password"
+                  id="user-pass"
+                  class="form-control"
+                  placeholder="Password"
+                  required
+                  autofocus=""
+                />
+              </div>
+              <div class="mb-3">
+                <input
+                  type="password"
+                  id="user-repeatpass"
+                  class="form-control"
+                  placeholder="Repeat Password"
+                  required
+                  autofocus=""
+                />
+              </div>
+
+              <button class="btn login-btn btn-block" type="submit">
+                Sign Up
+              </button>
+              <div class="mb-3">
+                <button class="btn google-btn">
+                  <img src="./assets/images/google.png" alt="icon" /> sign in
+                  with google
+                </button>
+              </div>
+
+              <div
+                class="mb-3 signup-box d-flex justify-content-center align-items-center"
+              >
+                <p class="foot-text">already have an account?</p>
+                <a href="#" id="cancel_signup">Login</a>
+              </div>
+            </form>
+            <br />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/all.min.js"></script>
+    <script src="./assets/js/coustom.js"></script>
+  </body>
+</html>

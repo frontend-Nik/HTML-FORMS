@@ -1,0 +1,298 @@
+$white: white;
+$black: #000;
+$color_2: lightseagreen;
+$background-color_1: #f3f3f3;
+$background-color_2: #3c589c;
+$background-color_3: #df4b3b;
+$purple: #2a58bd;
+$light-gray: #dfdfdf;
+$gray: #9d9d9d;
+$purple: #5C469C;
+
+// Poppins ===================
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins/Poppins-ExtraBold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins/Poppins-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins/Poppins-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins/Poppins-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins/Poppins-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins/Poppins-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+  font-weight: normal;
+  background-color: #f7e6ff;
+}
+.wrapper {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+.left-side {
+  background-image: url(../images/form-bg2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+
+  .contain {
+    padding: 4rem;
+    backdrop-filter: blur(4px);
+    .welcome {
+      color: $white;
+      text-transform: capitalize;
+      font-weight: 600;
+    }
+    .welcom-pera {
+      color: $white;
+    }
+  }
+}
+.left-side,
+.right-side {
+  padding: 0;
+}
+.main-box {
+  width: 70%;
+  height: 700px;
+  margin: auto;
+  background: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0px 0px 21px 0px rgba(0, 0, 0, 0.25);
+}
+.right-side {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+#logreg-forms {
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  width: 70%;
+  form {
+    width: 100%;
+    margin-top: 2rem;
+  }
+  .form-title {
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 500;
+    color: $purple;
+  }
+  .form-pera {
+    text-align: center;
+    font-size: 14px;
+    color: $gray;
+  }
+  .form-label,
+  .form-check-label {
+    font-family: "Poppins";
+    text-transform: capitalize;
+  }
+  .form-control {
+    position: relative;
+    box-sizing: border-box;
+    height: auto;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 10px;
+    &:focus {
+      z-index: 2;
+    }
+  }
+  .form-signin {
+    input[type="email"] {
+      margin-bottom: -1px;
+    }
+  }
+  .login-btn {
+    background-color: $purple;
+    color: $white;
+    margin-top: 3rem;
+    border-radius: 10px;
+    padding: 0.6rem 0;
+    font-size: 20px;
+    font-weight: 600;
+    &:hover {
+      background-color: #8469d4;
+    }
+  }
+  .google-btn {
+    background-color: $white;
+    color: $gray;
+    width: 100%;
+    border: 1px solid $light-gray;
+    border-radius: 10px;
+    padding: 0.6rem 0;
+    text-transform: capitalize;
+    margin: 1rem 0rem 2rem 0rem;
+    img {
+      width: 20px;
+      height: 20px;
+      margin-right: 0.5rem;
+    }
+  }
+  .signup-box {
+    display: flex;
+    align-items: center;
+    p {
+      margin: 0;
+    }
+    a {
+      margin-left: 0.5rem;
+      font-weight: 600;
+    }
+  }
+  .social-login {
+    width: 390px;
+    margin: 0 auto;
+    margin-bottom: 14px;
+  }
+  .social-btn {
+    font-weight: 100;
+    color: $white;
+    width: 190px;
+    font-size: 0.9rem;
+  }
+  a {
+    display: block;
+    color: $purple;
+    cursor: pointer;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  .foot-text {
+    text-transform: capitalize;
+  }
+  // button[type="submit"] {
+  //   margin-top: 10px;
+  // }
+  .facebook-btn {
+    background-color: $background-color_2;
+  }
+  // .google-btn {
+  //   background-color: $background-color_3;
+  // }
+  .form-reset {
+    display: none;
+  }
+  .form-signup {
+    display: none;
+    .social-btn {
+      width: 210px;
+    }
+    input {
+      margin-bottom: 2px;
+    }
+  }
+}
+#logreg-form {
+  .lines {
+    width: 200px;
+    border: 1px solid red;
+  }
+}
+.form-signup {
+  .social-login {
+    width: 210px !important;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 500px) {
+  #logreg-forms {
+    .social-login {
+      width: 200px;
+      margin: 0 auto;
+      margin-bottom: 10px;
+    }
+    .social-btn {
+      font-size: 1.3rem;
+      font-weight: 100;
+      color: $white;
+      width: 200px;
+      height: 56px;
+      &:nth-child(1) {
+        margin-bottom: 5px;
+      }
+      span {
+        display: none;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767.68px) {
+  .wrapper {
+    display: block;
+  }
+  .main-box {
+    width: 100%;
+    border-radius: 0;
+    box-shadow: none;
+  }
+}
+
+@media screen and (max-width: 1199.68px) {
+  .left-side {
+    display: none;
+  }
+  #logreg-forms {
+    width: 100%;
+  }
+  .main-box {
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 768px) and (max-width: 991.68px) {
+  .left-side {
+    display: none;
+  }
+}
